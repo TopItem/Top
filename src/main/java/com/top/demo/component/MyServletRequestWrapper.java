@@ -30,7 +30,6 @@ public class MyServletRequestWrapper extends HttpServletRequestWrapper {
     public BufferedReader getReader() throws IOException {
         return new BufferedReader(new InputStreamReader(getInputStream()));
     }
-
     @Override
     public ServletInputStream getInputStream() throws IOException {
         return new RequestBodyCachingInputStream(body);

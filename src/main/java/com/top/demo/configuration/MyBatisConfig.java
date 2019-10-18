@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * * @create: 2019/3/25
  **/
 @Configuration
-@MapperScan(basePackages = {"com.top.demo.modules.admin.dao"})
+@MapperScan(basePackages = "com.top.demo.modules.mapper")
 public class MyBatisConfig {
 
 

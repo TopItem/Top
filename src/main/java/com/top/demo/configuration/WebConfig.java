@@ -19,6 +19,7 @@ public class WebConfig implements WebMvcConfigurer{
 
     @Autowired
     private LoginHandlerInterceptor loginHandlerInterceptor;
+
     /**
      * 静态资源配置
      * @param registry
@@ -49,6 +50,6 @@ public class WebConfig implements WebMvcConfigurer{
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginHandlerInterceptor).
                 addPathPatterns("/**").
-                excludePathPatterns("/**/user");
+                excludePathPatterns("/static/**");
     }
 }

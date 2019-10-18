@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.top.demo.modules.mapper.RelationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.top.demo.modules.pojo.RelationDO">
+        <id column="id" property="id" />
+        <result column="rela_st_id" property="relaStId" />
+        <result column="rela_tea_id" property="relaTeaId" />
+        <result column="rela_specialty" property="relaSpecialty" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, rela_st_id, rela_tea_id, rela_specialty, start_time, end_time, create_time, update_time
+    </sql>
+
+</mapper>

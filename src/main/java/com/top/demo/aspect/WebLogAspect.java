@@ -26,7 +26,7 @@ public class WebLogAspect {
     /**
      * 扫描所有模块的controller
      */
-    @Pointcut("execution( * com.example.demo.modules.admin.controller.*.*(..))")
+    @Pointcut("execution( * com.top.demo.modules.controller.*.*(..))")
     public void logPointCut() {
     }
 
