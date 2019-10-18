@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.top.demo.modules.mapper.DictTypeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.top.demo.modules.pojo.DictTypeDO">
+        <id column="id" property="id" />
+        <result column="dict_code" property="dictCode" />
+        <result column="dict_name" property="dictName" />
+        <result column="dict_status" property="dictStatus" />
+        <result column="dict_parent" property="dictParent" />
+        <result column="dict_order" property="dictOrder" />
+        <result column="is_leaf" property="leaf" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, dict_code, dict_name, dict_status, dict_parent, dict_order, is_leaf, create_time, update_time
+    </sql>
+
+</mapper>

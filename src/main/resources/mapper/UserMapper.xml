@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.top.demo.modules.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.top.demo.modules.pojo.UserDO">
+        <id column="id" property="id" />
+        <result column="u_user_name" property="uUserName" />
+        <result column="u_password" property="uPassword" />
+        <result column="u_specialty" property="uSpecialty" />
+        <result column="u_phone" property="uPhone" />
+        <result column="u_profile" property="uProfile" />
+        <result column="u_sex" property="uSex" />
+        <result column="u_degree" property="uDegree" />
+        <result column="u_status" property="uStatus" />
+        <result column="u_role" property="uRole" />
+        <result column="u_email" property="uEmail" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, u_user_name, u_password, u_specialty, u_phone, u_profile, u_sex, u_degree, u_status, u_role, u_email, create_time, update_time
+    </sql>
+
+</mapper>
