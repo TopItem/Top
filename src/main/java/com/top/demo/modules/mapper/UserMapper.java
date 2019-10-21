@@ -1,5 +1,6 @@
 package com.top.demo.modules.mapper;
 
+import com.github.pagehelper.Page;
 import com.top.demo.modules.pojo.UserDO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface UserMapper extends BaseMapper<UserDO> {
 
+    Page<UserDO> findUserListPage();
 }

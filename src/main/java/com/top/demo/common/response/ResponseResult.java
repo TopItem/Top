@@ -31,7 +31,7 @@ public class ResponseResult implements Response {
     /**
      * 数据
      */
-    Object obj;
+    Object result;
 
     public ResponseResult(ResultCode resultCode){
         this.success = resultCode.success();
@@ -54,13 +54,13 @@ public class ResponseResult implements Response {
         this.success = resultCode.success();
         this.code = resultCode.code();
         this.message = resultCode.message();
-        this.obj = obj;
+        this.result = obj;
     }
 
     public ResponseResult(int code, String message, Object obj) {
         this.code = code;
         this.message = message;
-        this.obj = obj;
+        this.result = obj;
     }
 
     public static ResponseResult SUCCESS(){

@@ -44,6 +44,7 @@ public class UserController extends BaseController implements UserControllerApi 
 
     @Autowired
     RedisTemplate redisTemplate;
+
     @Override
     @RequestMapping("info")
     @RequiresPermissions("user:view")

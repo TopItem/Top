@@ -1,6 +1,8 @@
 package com.top.demo.utils;
 
 
+import com.top.demo.common.response.CommonCode;
+import com.top.demo.exception.ExceptionCast;
 import com.top.demo.modules.pojo.UserDO;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
@@ -29,7 +31,7 @@ public class ShiroUtils {
         Session session = SecurityUtils.getSubject().getSession();
         SimplePrincipalCollection principalCollection = (SimplePrincipalCollection) session.getAttribute(DefaultSubjectContext.PRINCIPALS_SESSION_KEY);
         if (principalCollection == null) {
-            return null;
+            ExceptionCast.cast(CommonCode.UNAUTHORISE);
         }
         return (UserDO) principalCollection.getPrimaryPrincipal();
     }

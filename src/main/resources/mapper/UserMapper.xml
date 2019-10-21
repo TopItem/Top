@@ -24,4 +24,8 @@
         id, u_user_name, u_password, u_specialty, u_phone, u_profile, u_sex, u_degree, u_status, u_role, u_email, create_time, update_time
     </sql>
 
+    <select id="findUserListPage" resultMap="BaseResultMap">
+        SELECT  <include refid="Base_Column_List"/>
+         from sys_user
+    </select>
 </mapper>

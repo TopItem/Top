@@ -125,11 +125,11 @@
 			<artifactId>HikariCP</artifactId>
 			<!-- 版本号可以不用指定，Spring Boot会选用合适的版本 -->
 		</dependency>
-		<!--集成分页插件-->
+        <!--pagehelper-->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
-			<artifactId>pagehelper</artifactId>
-			<version>4.1.0</version>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.2.4</version>
 		</dependency>
 		<!--shrio相关-->
 		<dependency>
